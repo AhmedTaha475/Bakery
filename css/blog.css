@@ -1,0 +1,48 @@
+#allBlog span{
+    color: #999999;
+    font-size: 12px;
+}
+.anchor{
+    color: #686868;
+    transition: all 0.5s;
+}
+.anchor  i{
+    transition: all 0.5s;
+}
+.anchor:hover{
+    color: #8E7754;
+}
+.anchor:hover i{
+    padding-left: 10px;
+}
+.quotePost {
+    background-color: #8E7754;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.quotePost:hover{
+    background-color: #333333;
+}
+.blog-right input{
+    border: solid 1px #ccc9c9;
+    padding: 6px;
+    border-radius: 5px;
+    width: 255px;
+}
+.blog-right ul li a{
+    text-decoration: none;
+    color:#686868 ;
+  
+}
+
+
+.blog-right ul li a:hover{
+    color: #92764b;
+}
+a{
+    color:#686868 ;
+   
+}
+a:hover{
+    color: #92764b;
+}
