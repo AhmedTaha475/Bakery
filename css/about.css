@@ -1,0 +1,17 @@
+header{
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+#about-adv .container i{
+    color: #8E7754;
+}
+#about-counter{
+    background-color:#8E7754 ;  
+    color: white    ;
+    
+}
+#about-counter h2,#about-counter h5{
+color: white;
+}

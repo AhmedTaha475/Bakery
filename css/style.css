@@ -1,0 +1,398 @@
+body
+{
+    font-family: 'segoe ui light';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url(../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf);
+    font-family: ags-400;
+}
+@font-face{
+    src: url(../fonts/Alegreya/Alegreya-Medium.ttf);
+    font-family: ag-500;
+}
+@font-face{
+    src: url(../fonts/Alegreya/Alegreya-Bold.ttf);
+    font-family: ag-600;
+}
+ h1,h2,h3,h4,h5,h6{
+    color: black;
+} 
+ h1,h2,h3{
+    font-family: "ag-600";
+} 
+h4,h5,h6{
+    font-family: "ag-500";
+}
+ p{
+    color:#686868;
+    font-family: "ags-400";
+} 
+/*NavBar Adjustment*/
+header nav{
+    transition: all 1s;
+}
+header .container .navbar-brand img{
+    width: 150px;
+}
+
+header .container .navbar-collapse .navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    color: white ;
+    transition: color 0.51s;
+}
+header .container .navbar-collapse .navbar-nav .nav-item a:hover{
+    color: #e0c690   !important ;
+    
+}
+.navScroll-link{
+    color: black !important;
+    
+}
+
+/* My home Data*/
+header #home{
+    background-image: url(../images/drew-coffman-1872.jpg);
+    height: 90vh;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: white;
+}
+#home .home-content p:nth-child(1){
+    font-size: 22px;
+}
+ #home .home-content h1{
+    font-size: 76px;
+} 
+#home .home-content p:nth-child(3){
+    font-size: 24px;
+    max-width: 550px;
+    margin:auto;
+    
+}
+#home .home-content p,#home .home-content h1{
+    color:white;
+}
+#home .home-content .home-btn .btn1{
+    color: white;
+    background-color: #8e7754;
+    font-weight: 500;
+
+}
+#home .home-content .home-btn .btn1:hover{
+    color: black;
+    background-color: white !important;
+}
+#home .home-content .home-btn .btn2{
+    color: white;
+    background-color: transparent;
+    border: solid 2px white;
+    font-weight: 500;
+
+}
+#home .home-content .home-btn .btn2:hover{
+    color: black;
+    background-color: white;
+}
+
+/*My scroll-down build*/
+
+ #scroll-down{
+    width: 30px;
+    height: 50px;
+    border: solid 1px white;
+    margin: auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#scroll-down .ball{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: movingBall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes movingBall{
+    from{
+        margin: 4px;
+        opacity: 1;
+
+    }
+    to{
+        margin-top: 25px;
+        opacity: 0;
+    }
+}
+
+/*my home-about section*/
+#home-about .container .row .h-a-info{
+    padding-left: 48px;
+}
+#home-about .h-a-icons i{
+    color:#8e7754 ;
+    font-size: 25px;
+}
+#home-about .h-a-icons .icon-circle{
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgb(216, 214, 214);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#home-about .h-a-icons p{
+    padding-top: 10px;
+    line-height: 40px;
+}
+#home-location .container .row .h-l-img{
+    padding-left: 48px;
+}
+/* my info sections*/
+
+ .h-a-icons i{
+    color:#8e7754 ;
+    font-size: 25px;
+}
+ .h-a-icons .icon-circle{
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgb(216, 214, 214);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+ .h-a-icons p{
+    padding-top: 10px;
+    line-height: 40px;
+}
+#home-info .container .row .iframe{
+    padding-left: 48px;
+}
+
+/*my home-hours section*/
+#home-hours {
+    background-color: #403D38;
+}
+#home-hours h5{
+    color: white;
+}
+#home-hours p{
+    color: rgba(255, 255, 255, 0.26);
+    font-size: 14px;
+}
+#home-hours .h-h-items .h-h-item i{
+    color: rgba(255, 255, 255, 0.26);
+}
+#home-hours .h-h-items .h-h-item{
+    border-bottom: solid 1px  rgba(255, 255, 255, 0.26);
+}
+#home-hours .h-h-items .last{
+    border-bottom: none;
+}
+#home-hours  .bg-special{
+    background-image: url(../images/contact-details-map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #403D38;
+    background-blend-mode: overlay;
+}
+#home-hours .h-h-items .hover{
+    transition: color   1s;
+}
+#home-hours .h-h-items .hover:hover{
+    cursor: pointer;
+    color: white;
+}
+
+/*footer*/
+footer{
+     background-color: #353330; 
+   
+}
+footer img{
+    width: 350px;
+}
+footer .footer-icons .footer-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #403D38;
+    border-radius: 50%;
+    margin-left: 15px;
+    transition: all 0.5s;
+    color: rgba(255, 255, 255, 0.26);
+}
+footer p{
+    color: rgba(255, 255, 255, 0.26);
+}
+footer .footer-icons .face:hover{
+    background-color: #3b5998;
+}
+footer .footer-icons .google:hover{
+    background-color: #dd4b39;
+}
+footer .footer-icons .linked:hover{
+    background-color: #007bb5;
+}
+footer .footer-icons .twitter:hover{
+    background-color: #00aced;
+}
+footer .footer-icons .footer-icon:hover {
+    color:white;
+}
+
+
+/*responsive*/
+
+@media only screen and (max-width:576px){
+    #home .home-content p:nth-child(1){
+        font-size: 22px;
+    }
+     #home .home-content h1{
+        font-size: 34px;
+    } 
+    #home .home-content p:nth-child(3){
+        font-size: 16px;
+        max-width: 550px;
+        margin:auto;
+        
+    }
+    #home-about .container .row .h-a-info{
+        padding-left: 0;
+        
+    }
+    #home-location .container .row .h-l-img{
+        padding-left: 0;
+    }
+    #home-info .container .row .iframe{
+        padding-left: 0px;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:768px){
+    #home .home-content p:nth-child(1){
+        font-size: 22px;
+    }
+     #home .home-content h1{
+        font-size: 34px;
+    } 
+    #home .home-content p:nth-child(3){
+        font-size: 16px;
+        max-width: 550px;
+        margin:auto;
+        
+    }
+    #home-about .container .row .h-a-info{
+        padding-left: 0;
+        
+    }
+    #home-location .container .row .h-l-img{
+        padding-left: 0;
+    }
+    #home-info .container .row .iframe{
+        padding-left: 0px;
+    }
+}
+
+/*fixed parts in the page.*/
+
+#fixed-icons .scroll-up{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    transition: all 0.5s;
+    border: solid 1px rgba(255, 255, 255, 0.5) ;
+    cursor: pointer;
+    
+}
+#fixed-icons .scroll-up:hover{
+    background-color:rgba(0,0,0,0.9); 
+}
+/*side-bar*/
+#fixed-icons .fixed-bar .side-bar  .color-box{
+    width: 20;
+    height: 20;
+    border-radius: 3px;
+    float: left;
+    margin-left: 13px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#fixed-icons .fixed-bar .side-bar  .color-box:hover{
+    transform: scale(1.2,1.2);
+}
+#fixed-icons .fixed-bar {
+    right: -300;
+    top: 0;
+    z-index: 6666666;
+    position: fixed;
+    transition: all 1s;
+}
+#fixed-icons .fixed-bar .side-bar{
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    overflow: scroll;
+    
+}
+
+.site-img{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+.site-img:hover{
+   transform: translateY(-5px);
+}
+.site-img::after{
+    content: "";
+    position: absolute;
+    top:0;  
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: all 0.5s;
+}
+ .site-img:hover:after{
+    opacity: 1;
+} 
+
+/*sideBar icons*/
+.sideBar-icons{
+    width: 50px;
+    height: 90px;
+    background-color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+.sideBar-icons i{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.sideBar-icons i:hover{
+    color:#0275d8 ;
+}
